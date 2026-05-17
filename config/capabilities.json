@@ -1,0 +1,44 @@
+{
+  "android_emulator": {
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2",
+    "appium:deviceName": "emulator-5554",
+    "appium:platformVersion": "17",
+    "appium:app": "d:/MCP servers/Appium-MCP/smartkhotba-mobile-automation/apps/smartkhotba.apk",
+    "appium:appPackage": "com.islam.khutba.qa",
+    "appium:appActivity": "com.dev.smartkhotba.prsentation.splash.SplashActivity",
+    "appium:noReset": true,
+    "appium:fullReset": false,
+    "appium:newCommandTimeout": 300,
+    "appium:autoGrantPermissions": true,
+    "appium:uiautomator2ServerInstallTimeout": 60000
+  },
+  "android_real_device": {
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2",
+    "appium:deviceName": "",
+    "appium:udid": "",
+    "appium:platformVersion": "",
+    "appium:app": "d:/MCP servers/Appium-MCP/smartkhotba-mobile-automation/apps/smartkhotba.apk",
+    "appium:appPackage": "com.islam.khutba.qa",
+    "appium:appActivity": "com.dev.smartkhotba.prsentation.splash.SplashActivity",
+    "appium:noReset": true,
+    "appium:fullReset": false,
+    "appium:newCommandTimeout": 300,
+    "appium:autoGrantPermissions": true
+  },
+  "ci_headless": {
+    "platformName": "Android",
+    "appium:automationName": "UiAutomator2",
+    "appium:deviceName": "emulator-5554",
+    "appium:platformVersion": "14",
+    "appium:app": "d:/MCP servers/Appium-MCP/smartkhotba-mobile-automation/apps/smartkhotba.apk",
+    "appium:appPackage": "com.islam.khutba.qa",
+    "appium:appActivity": "com.dev.smartkhotba.prsentation.splash.SplashActivity",
+    "appium:noReset": true,
+    "appium:fullReset": false,
+    "appium:newCommandTimeout": 180,
+    "appium:autoGrantPermissions": true,
+    "appium:isHeadless": true
+  }
+}

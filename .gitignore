@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+venv/
+.venv/
+.env
+
+# Reports
+reports/allure-results/
+reports/*.html
+screenshots/
+
+# APKs (large binaries — use Git LFS for versioned APKs)
+apps/*.apk
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

@@ -1,0 +1,19 @@
+{
+  "_comment": "Appium MCP Server Configuration — Phase 3 accelerator",
+  "_purpose": "Enables AI-assisted test generation and element discovery via Claude",
+  "mcpServers": {
+    "appium-mcp": {
+      "command": "npx",
+      "args": ["-y", "appium-mcp"],
+      "env": {
+        "APPIUM_HOST": "http://127.0.0.1",
+        "APPIUM_PORT": "4723"
+      }
+    }
+  },
+  "usage_notes": {
+    "when_to_use": "Interactive test exploration, element discovery, code generation",
+    "when_not_to_use": "Regression execution, CI/CD pipelines, deterministic test runs",
+    "integration": "MCP generates page objects and locators → developer reviews → committed to pages/"
+  }
+}

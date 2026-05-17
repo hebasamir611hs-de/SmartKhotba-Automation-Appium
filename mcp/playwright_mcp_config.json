@@ -1,0 +1,14 @@
+{
+  "_comment": "Playwright MCP — for web-layer tests that complement mobile",
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@anthropic/playwright-mcp"],
+      "env": {}
+    }
+  },
+  "usage_notes": {
+    "purpose": "API-layer and web admin tests that validate same backend as mobile",
+    "shared_data": "utils/test_data.py is shared between mobile and web test suites"
+  }
+}
