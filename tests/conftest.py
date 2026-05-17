@@ -18,14 +18,14 @@ def pytest_runtest_makereport(item, call):
     setattr(item, f"rep_{rep.when}", rep)
 
 
-# ─── Fixture: Shared driver via server singleton (consistent with MCP lifecycle) ───
-@pytest.fixture(scope="session")
+# ─── Fixture: Per-test driver (isolated, each test gets a fresh session) ───
+@pytest.fixture
 def driver():
-    """Session-scoped Appium driver — mirrors MCP server singleton behavior."""
-    from server import server_instance
-    server_instance._ensure_driver()
-    yield server_instance.driver
-    server_instance.quit()
+    """Function-scoped Appium driver for standalone tests not using BaseTest."""
+    d = create_driver()
+    yield d
+    if d:
+        d.quit()
 
 
 # ─── Fixture: Screenshot on demand ───────────────────────────────

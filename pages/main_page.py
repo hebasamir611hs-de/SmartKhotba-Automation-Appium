@@ -1,8 +1,8 @@
-"""
+﻿"""
 MainPage — Main screen with bottom navigation (MainActivity).
 Hub for all main features: Khotba, Concepts, Reminders, etc.
 """
-from selenium.webdriver.common.by import By
+from appium.webdriver.common.appiumby import AppiumBy as By
 from pages.base_page import BasePage
 
 

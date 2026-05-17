@@ -12,9 +12,6 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 from utils.driver_factory import create_driver
 from utils.mobile_actions import MobileActions
-from core.api_testing import APITesting
-from core.performance_testing import PerformanceTesting
-from core.security_testing import SecurityTesting
 from utils.logger import get_logger
 
 # Load environment
@@ -31,9 +28,6 @@ class SmartKhotbaServer:
     def __init__(self):
         self.driver = None
         self.actions = None
-        self.api = APITesting()
-        self.perf = None
-        self.sec = None
 
     def _ensure_driver(self):
         with self._init_lock:
@@ -41,8 +35,6 @@ class SmartKhotbaServer:
                 logger.info("🚀 Initializing Appium Driver for SmartKhotba...")
                 self.driver = create_driver()
                 self.actions = MobileActions(self.driver)
-                self.perf = PerformanceTesting(self.driver)
-                self.sec = SecurityTesting(self.driver)
                 logger.info("✅ Driver initialized successfully.")
             return self.driver
 
@@ -65,8 +57,6 @@ class SmartKhotbaServer:
                     logger.warning(f"Driver quit error (ignored): {e}")
             self.driver = None
             self.actions = None
-            self.perf = None
-            self.sec = None
 
 # Singleton instance
 server_instance = SmartKhotbaServer()
@@ -103,28 +93,6 @@ def capture_screen(filename: str = "mcp_capture.png"):
     path = server_instance.actions.capture_screen(filename)
     return f"Screenshot captured: {path}"
 
-@mcp.tool()
-def verify_api_endpoint(endpoint: str):
-    """
-    [Architectural Placeholder] Verifies backend API status.
-    """
-    return server_instance.api.verify_endpoint(endpoint)
-
-@mcp.tool()
-def get_performance_report():
-    """
-    [Architectural Placeholder] Retrieves mobile performance metrics (CPU/RAM).
-    """
-    server_instance._ensure_driver()
-    return server_instance.perf.get_metrics()
-
-@mcp.tool()
-def run_security_audit():
-    """
-    [Architectural Placeholder] Runs a security scan on the current app state.
-    """
-    server_instance._ensure_driver()
-    return server_instance.sec.scan_vulnerabilities()
 
 @mcp.tool()
 def get_toast_text():

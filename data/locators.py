@@ -26,12 +26,6 @@ LOCATOR_REGISTRY = {
             "backups": [(By.XPATH, "//android.widget.Button[@text='English']")]
         }
     },
-    "login_page": {
-        "phone_input": {
-            "primary": (By.ID, "com.islam.khutba.qa:id/et_phone"),
-            "backups": [(By.XPATH, "//android.widget.EditText[contains(@resource-id, 'phone')]")]
-        }
-    },
     "home_page": {
         "welcome_text": {
             "primary": (By.ID, "com.islam.khutba.qa:id/welcome_text"),

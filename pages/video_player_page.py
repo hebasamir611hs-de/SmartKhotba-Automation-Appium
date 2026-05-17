@@ -1,8 +1,8 @@
-"""
+﻿"""
 VideoPlayerPage — Live stream / video player (VideoPlayerActivity).
 Watch khotba live stream or recorded video.
 """
-from selenium.webdriver.common.by import By
+from appium.webdriver.common.appiumby import AppiumBy as By
 from pages.base_page import BasePage
 
 

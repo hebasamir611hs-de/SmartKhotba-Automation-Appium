@@ -14,7 +14,7 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent
 
 PAGE_MODULES = [
-    "pages.splash_page", "pages.language_page", "pages.login_page",
+    "pages.splash_page", "pages.language_page",
     "pages.onboarding_page", "pages.otp_page", "pages.home_page",
     "pages.main_page", "pages.khotba_page", "pages.concepts_page",
     "pages.reminders_page", "pages.favorites_page", "pages.settings_page",
@@ -161,9 +161,8 @@ CORE_MODULES = [
     "config.env_config", "utils.logger", "utils.wait_helpers",
     "utils.screenshot_helper", "utils.test_data", "utils.driver_factory",
     "utils.locator_healing", "utils.mobile_actions",
-    "core.metrics_tracker", "core.api_testing",
-    "core.performance_testing", "core.security_testing",
-    "data.locators", "pages.base_page", "tests.helpers",
+    "core.metrics_tracker", "data.locators",
+    "pages.base_page", "tests.helpers",
 ]
 
 
