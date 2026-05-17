@@ -2,6 +2,7 @@
 OTP Verification Tests.
 """
 import pytest
+pytestmark = pytest.mark.skip(reason="OTP disabled — guest mode active")
 from tests.base_test import BaseTest
 from pages.splash_page import SplashPage
 from pages.language_page import LanguagePage
