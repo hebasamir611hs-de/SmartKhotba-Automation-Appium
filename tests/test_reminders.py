@@ -9,8 +9,9 @@ from tests.helpers import navigate_to_main
 
 
 @pytest.mark.regression
+@pytest.mark.usefixtures("clear_app_state")
 class TestReminders(BaseTest):
-    """Reminders feature tests — CRUD operations."""
+    """Reminders feature tests — CRUD operations. Uses clear_app_state for isolation."""
 
     def _go_to_reminders(self):
         main = navigate_to_main(self.driver)

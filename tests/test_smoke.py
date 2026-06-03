@@ -4,7 +4,6 @@ Covers: app launch, onboarding, main screen, key features accessible.
 """
 import pytest
 from tests.base_test import BaseTest
-from pages.splash_page import SplashPage
 from pages.main_page import MainPage
 from pages.khotba_page import KhotbaPage
 from pages.concepts_page import ConceptsPage
@@ -17,11 +16,10 @@ class TestSmoke(BaseTest):
     """Fast smoke tests — run after every deploy."""
 
     def test_app_launches(self):
-        """Verify that app launches without crash."""
-        splash = SplashPage(self.driver)
+        """Verify that app launches and reaches main screen."""
         main = MainPage(self.driver)
-        assert splash.is_splash_displayed() or main.is_main_screen_displayed(), \
-            "App failed to launch — neither splash nor main screen visible"
+        assert main.is_main_screen_displayed(), \
+            "App failed to reach main screen after launch"
 
     def test_reaches_main_screen(self):
         """Verify that main screen is reachable through onboarding."""

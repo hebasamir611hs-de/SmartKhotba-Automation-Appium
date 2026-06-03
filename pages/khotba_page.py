@@ -11,28 +11,16 @@ class KhotbaPage(BasePage):
 
     PAGE_NAME = "khotba_page"
 
-    # ─── Locators ────────────────────────────────────────────────
-    KHOTBA_LIST = (By.ID, "com.islam.khutba.qa:id/rv_khotba")
-    KHOTBA_TITLE = (By.ID, "com.islam.khutba.qa:id/tv_khotba_title")
-    KHOTBA_DATE = (By.ID, "com.islam.khutba.qa:id/tv_khotba_date")
-    KHOTBA_CONTENT = (By.ID, "com.islam.khutba.qa:id/tv_khotba_content")
-    PLAY_AUDIO_BUTTON = (By.ID, "com.islam.khutba.qa:id/btn_play_audio")
-    LIVE_STREAM_BUTTON = (By.ID, "com.islam.khutba.qa:id/btn_live_stream")
-    SHARE_BUTTON = (By.ID, "com.islam.khutba.qa:id/btn_share")
-    FAVORITE_BUTTON = (By.ID, "com.islam.khutba.qa:id/btn_favorite")
-    SEARCH_ICON = (By.ID, "com.islam.khutba.qa:id/btn_search")
-    SEARCH_FIELD = (By.ID, "com.islam.khutba.qa:id/et_search")
-    EMPTY_STATE = (By.ID, "com.islam.khutba.qa:id/tv_empty")
-    LOADING = (By.ID, "com.islam.khutba.qa:id/progress_bar")
-
-    # ─── Tab/Filter ──────────────────────────────────────────────
-    TAB_ALL = (By.XPATH, "//*[contains(@text, 'الكل') or contains(@text, 'All')]")
-    TAB_FRIDAY = (By.XPATH, "//*[contains(@text, 'الجمعة') or contains(@text, 'Friday')]")
+    # ─── Locators (verified from live device 2026-06-03) ────────────
+    KHOTBA_TITLE = (By.XPATH, "//android.widget.TextView[@text='الخطب السابقة']")
+    MOSQUE_SELECTOR = (By.XPATH, "//*[@text='اختر المسجد']")
+    SEARCH_ICON = (By.XPATH, "//*[@content-desc='بحث']")
+    LOADING = (By.CLASS_NAME, "android.widget.ProgressBar")
 
     # ─── Actions ─────────────────────────────────────────────────
 
     def is_khotba_screen_displayed(self) -> bool:
-        return self.is_displayed(self.KHOTBA_LIST, timeout=10) or \
+        return self.is_displayed(self.MOSQUE_SELECTOR, timeout=15) or \
                self.is_displayed(self.KHOTBA_TITLE, timeout=5)
 
     def select_khotba_by_index(self, index: int = 0):
@@ -72,4 +60,6 @@ class KhotbaPage(BasePage):
         return self.is_displayed(self.EMPTY_STATE, timeout=5)
 
     def wait_for_content_loaded(self):
-        self.wait_for_loader_gone(self.LOADING, timeout=20)
+        self.wait_for_loader_gone(self.LOADING, timeout=10)
+        from utils.wait_helpers import wait_for_element
+        wait_for_element(self.driver, self.MOSQUE_SELECTOR, timeout=15)
