@@ -1,36 +1,34 @@
 """
-LoginPage — SmartKhotba Login Screen.
-[PLACEHOLDER — Needs APK inspection for actual locators]
+LoginPage — SmartKhotba does NOT have a traditional login screen.
+Authentication is OTP-based (see otp_page.py).
+Verified via app activity dump and page_source on real device (2026-06-03):
+only SplashActivity and MainActivity exist — no LoginActivity.
+
+This module is kept for backward compatibility with test_login.py imports
+but delegates to OTPPage for the actual auth flow.
 """
-from selenium.webdriver.common.by import By
+from appium.webdriver.common.appiumby import AppiumBy as By
 from pages.base_page import BasePage
 
 
 class LoginPage(BasePage):
-    """Page Object for SmartKhotba login screen."""
+    """Auth entry point — wraps OTP-based authentication.
+    SmartKhotba uses phone+OTP, not username/password.
+    """
 
     PAGE_NAME = "login_page"
 
-    # ─── Locators (update after APK inspection) ──────────────────
-    USERNAME_FIELD = (By.ID, "com.islam.khutba.qa:id/username")
-    PASSWORD_FIELD = (By.ID, "com.islam.khutba.qa:id/password")
-    LOGIN_BUTTON = (By.ID, "com.islam.khutba.qa:id/btn_login")
-    ERROR_MESSAGE = (By.ID, "com.islam.khutba.qa:id/error_text")
-    FORGOT_PASSWORD = (By.ID, "com.islam.khutba.qa:id/forgot_password")
-
-    # ─── Actions ─────────────────────────────────────────────────
-
-    def login(self, username: str, password: str):
-        """Perform login with given credentials."""
-        self.type_text(self.USERNAME_FIELD, username)
-        self.type_text(self.PASSWORD_FIELD, password)
-        self.hide_keyboard()
-        self.click(self.LOGIN_BUTTON)
-
-    def get_error_message(self) -> str:
-        """Get login error text."""
-        return self.get_text(self.ERROR_MESSAGE)
+    # The app has no login screen — auth is OTP-based via OTPPage.
+    # These locators point to the OTP flow entry if it appears.
+    PHONE_INPUT = (By.XPATH, "//android.widget.EditText")
+    SKIP_BUTTON = (By.XPATH, "//*[contains(@text, 'تخطي') or contains(@text, 'Skip')]")
 
     def is_login_page_displayed(self) -> bool:
-        """Verify login page is loaded."""
-        return self.is_displayed(self.LOGIN_BUTTON)
+        """Check if any auth/OTP screen is displayed."""
+        return self.is_displayed(self.PHONE_INPUT, timeout=5) or \
+               self.is_displayed(self.SKIP_BUTTON, timeout=3)
+
+    def skip_login(self):
+        """Skip authentication if available."""
+        if self.is_displayed(self.SKIP_BUTTON, timeout=3):
+            self.click(self.SKIP_BUTTON)

@@ -38,14 +38,20 @@ class LocatorHealer:
         
         for strategy, selector in backups:
             try:
-                element = driver.find_element(strategy, selector)
-                logger.info(f"✅ Healed! Found element using {strategy}: {selector}")
-                
-                # Log success metric
+                matches = driver.find_elements(strategy, selector)
+                if len(matches) == 0:
+                    continue
+                if len(matches) > 1:
+                    logger.warning(
+                        f"Ambiguous heal: {strategy}={selector} matched {len(matches)} elements. Rejecting."
+                    )
+                    continue
+                element = matches[0]
+                logger.info(f"Healed: found unique element using {strategy}: {selector}")
                 metrics.log_healing_event(
-                    page_name or "Unknown", 
-                    element_name or "Unknown", 
-                    primary_locator, 
+                    page_name or "Unknown",
+                    element_name or "Unknown",
+                    primary_locator,
                     (strategy, selector)
                 )
                 return element

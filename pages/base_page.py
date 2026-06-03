@@ -161,12 +161,13 @@ class BasePage:
         except Exception:
             pass
 
-    def get_toast_message(self) -> str:
-        """Get Android toast message text (UiAutomator2)."""
+    def get_toast_message(self, timeout: int = 3) -> str:
+        """Get Android toast message text (UiAutomator2) with polling."""
+        from selenium.webdriver.support.ui import WebDriverWait
         try:
-            toast = self.driver.find_element(
-                By.XPATH, "//android.widget.Toast"
+            toast = WebDriverWait(self.driver, timeout).until(
+                lambda d: d.find_element(By.XPATH, "//android.widget.Toast")
             )
             return toast.text
-        except NoSuchElementException:
+        except Exception:
             return ""

@@ -10,6 +10,7 @@ venv/
 
 # Reports
 reports/allure-results/
+reports/screenshots/
 reports/*.html
 screenshots/
 

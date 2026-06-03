@@ -28,19 +28,22 @@ LOCATOR_REGISTRY = {
     },
     "home_page": {
         "welcome_text": {
-            "primary": (By.ID, "com.islam.khutba.qa:id/welcome_text"),
+            "primary": (By.XPATH, "//*[contains(@text, 'أهلا بك')]"),
             "backups": [
-                (By.XPATH, "//*[contains(@resource-id, 'welcome')]"),
-                (By.XPATH, "//android.widget.TextView[contains(@text, 'مرحبا') or contains(@text, 'Welcome')]"),
+                (By.XPATH, "//android.widget.TextView[contains(@text, 'أهلا')]"),
             ],
         },
-        "menu_button": {
-            "primary": (By.ACCESSIBILITY_ID, "Menu"),
-            "backups": [(By.ID, "com.islam.khutba.qa:id/btn_menu")],
+        "logo": {
+            "primary": (By.XPATH, "//*[@content-desc='Logo']"),
+            "backups": [(By.XPATH, "//android.widget.ImageView[@content-desc='Logo']")],
         },
-        "profile_icon": {
-            "primary": (By.ID, "com.islam.khutba.qa:id/profile_icon"),
-            "backups": [(By.XPATH, "//*[contains(@resource-id, 'profile')]")],
+        "live_stream": {
+            "primary": (By.XPATH, "//*[@text='البث المباشر']"),
+            "backups": [(By.XPATH, "//android.widget.TextView[@text='البث المباشر']")],
+        },
+        "concepts_card": {
+            "primary": (By.XPATH, "//*[@content-desc='مفاهيم دينية']"),
+            "backups": [(By.XPATH, "//android.widget.TextView[@text='مفاهيم دينية']")],
         },
     },
     "onboarding_page": {
@@ -67,21 +70,21 @@ LOCATOR_REGISTRY = {
         },
     },
     "main_page": {
+        "logo": {
+            "primary": (By.XPATH, "//*[@content-desc='Logo']"),
+            "backups": [(By.XPATH, "//android.widget.ImageView[@content-desc='Logo']")],
+        },
         "nav_home": {
-            "primary": (By.ID, "com.islam.khutba.qa:id/nav_home"),
-            "backups": [(By.XPATH, "//*[@resource-id='com.islam.khutba.qa:id/nav_home']")]
+            "primary": (By.XPATH, "//android.widget.TextView[@text='الرئيسية']"),
+            "backups": [(By.XPATH, "//*[@text='الرئيسية']")],
         },
         "nav_khotba": {
-            "primary": (By.ID, "com.islam.khutba.qa:id/nav_khotba"),
-            "backups": [(By.XPATH, "//*[@resource-id='com.islam.khutba.qa:id/nav_khotba']")]
+            "primary": (By.XPATH, "//android.widget.TextView[@text='الخطب السابقة']"),
+            "backups": [(By.XPATH, "//*[@text='الخطب السابقة']")],
         },
         "nav_concepts": {
-            "primary": (By.ID, "com.islam.khutba.qa:id/nav_concepts"),
-            "backups": [(By.XPATH, "//*[@resource-id='com.islam.khutba.qa:id/nav_concepts']")]
-        },
-        "menu_button": {
-            "primary": (By.ID, "com.islam.khutba.qa:id/btn_menu"),
-            "backups": [(By.ACCESSIBILITY_ID, "Menu")],
+            "primary": (By.XPATH, "//android.widget.TextView[@text='مفاهيم دينية']"),
+            "backups": [(By.XPATH, "//*[@text='مفاهيم دينية']")],
         },
     },
     "khotba_page": {
