@@ -6,8 +6,11 @@ import pytest
 from utils.driver_factory import create_driver
 from utils.screenshot_helper import take_screenshot
 from utils.logger import get_logger
+from config.env_config import APP_PACKAGE
 
 logger = get_logger(__name__)
+
+APP_PACKAGE_DEFAULT = "com.islam.khutba.qa"
 
 
 class BaseTest:
@@ -20,7 +23,15 @@ class BaseTest:
         """Setup driver before test, teardown after."""
         logger.info(f"▶ Starting: {request.node.name}")
         self.driver = create_driver()
-        
+
+        package = APP_PACKAGE or APP_PACKAGE_DEFAULT
+        try:
+            self.driver.terminate_app(package)
+            self.driver.activate_app(package)
+            logger.info("App restarted from splash via terminate/activate")
+        except Exception as e:
+            logger.warning(f"App restart failed (non-fatal): {e}")
+
         yield
         
         # Screenshot on failure (hasattr guard — rep_call may not exist if setup itself fails)

@@ -11,9 +11,9 @@ class SplashPage(BasePage):
 
     PAGE_NAME = "splash_page"
 
-    # ─── Locators ────────────────────────────────────────────────
-    APP_LOGO = (By.ID, "com.islam.khutba.qa:id/splash_logo")
-    LOADING_INDICATOR = (By.ID, "com.islam.khutba.qa:id/progress_bar")
+    # ─── Locators (Compose — no resource IDs) ────────────────────
+    APP_LOGO = (By.XPATH, "//*[@content-desc='Logo']")
+    LOADING_INDICATOR = (By.CLASS_NAME, "android.widget.ProgressBar")
 
     # ─── Actions ─────────────────────────────────────────────────
 

@@ -10,9 +10,8 @@ from tests.helpers import navigate_to_main
 
 
 @pytest.mark.regression
-@pytest.mark.usefixtures("clear_app_state")
 class TestSettings(BaseTest):
-    """Settings screen tests — uses clear_app_state for isolation."""
+    """Settings screen tests."""
 
     def _go_to_settings(self):
         main = navigate_to_main(self.driver)

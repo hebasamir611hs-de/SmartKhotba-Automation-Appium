@@ -1,1 +1,772 @@
-[]
+[
+  {
+    "timestamp": "2026-05-17T10:48:26.462362",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "nav_khotba",
+    "primary_locator": "('id', 'com.islam.khutba.qa:id/nav_khotba')"
+  },
+  {
+    "timestamp": "2026-05-17T10:51:02.914315",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "nav_concepts",
+    "primary_locator": "('id', 'com.islam.khutba.qa:id/nav_concepts')"
+  },
+  {
+    "timestamp": "2026-05-20T09:34:48.821247",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "nav_khotba",
+    "primary_locator": "('id', 'com.islam.khutba.qa:id/nav_khotba')"
+  },
+  {
+    "timestamp": "2026-05-20T09:37:05.561377",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "nav_concepts",
+    "primary_locator": "('id', 'com.islam.khutba.qa:id/nav_concepts')"
+  },
+  {
+    "timestamp": "2026-06-03T22:02:04.984653",
+    "status": "FAILED",
+    "page": "concepts_page",
+    "element": "(//androidx.recyclerview.widget.RecyclerView//android.widget.LinearLayout)[1]",
+    "primary_locator": "('xpath', '(//androidx.recyclerview.widget.RecyclerView//android.widget.LinearLayout)[1]')"
+  },
+  {
+    "timestamp": "2026-06-03T22:02:50.577533",
+    "status": "FAILED",
+    "page": "concepts_page",
+    "element": "(//androidx.recyclerview.widget.RecyclerView//android.widget.LinearLayout)[1]",
+    "primary_locator": "('xpath', '(//androidx.recyclerview.widget.RecyclerView//android.widget.LinearLayout)[1]')"
+  },
+  {
+    "timestamp": "2026-06-03T22:03:36.516271",
+    "status": "FAILED",
+    "page": "concepts_page",
+    "element": "(//androidx.recyclerview.widget.RecyclerView//android.widget.LinearLayout)[1]",
+    "primary_locator": "('xpath', '(//androidx.recyclerview.widget.RecyclerView//android.widget.LinearLayout)[1]')"
+  },
+  {
+    "timestamp": "2026-06-03T22:04:22.957981",
+    "status": "FAILED",
+    "page": "concepts_page",
+    "element": "(//androidx.recyclerview.widget.RecyclerView//android.widget.LinearLayout)[1]",
+    "primary_locator": "('xpath', '(//androidx.recyclerview.widget.RecyclerView//android.widget.LinearLayout)[1]')"
+  },
+  {
+    "timestamp": "2026-06-03T22:11:12.493907",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:11:18.861228",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='مفاهيم دينية']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='مفاهيم دينية']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:11:55.354243",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='مفاهيم دينية']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='مفاهيم دينية']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:11:56.064277",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:12:14.033387",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='مفاهيم دينية']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='مفاهيم دينية']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:12:14.505061",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:12:36.552874",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:12:53.998314",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:13:03.591424",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:13:25.601164",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:13:26.872642",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:13:44.059147",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:14:17.007885",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:14:29.414114",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:15:22.082096",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:15:36.048996",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:15:48.969948",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:17:08.445181",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:17:24.400562",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:17:34.274493",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:17:45.018202",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:19:15.295517",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:19:31.629382",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:19:54.724699",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:26:38.231585",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:26:59.815812",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:27:21.536584",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:27:30.161328",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='مفاهيم دينية']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='مفاهيم دينية']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:27:43.816703",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='مفاهيم دينية']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='مفاهيم دينية']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:28:02.204024",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='مفاهيم دينية']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='مفاهيم دينية']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:28:40.337140",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:28:54.752151",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:15.199221",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:31.587021",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='مفاهيم دينية']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='مفاهيم دينية']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.936537",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e0",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.937154",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e1",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.937735",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e2",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.938719",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e3",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.939314",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e4",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.940045",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e5",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.940715",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e6",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.941406",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e7",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.941892",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e8",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.942606",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e9",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.943344",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e10",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.943833",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e11",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.944410",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e12",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.944997",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e13",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.945962",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e14",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.947002",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e15",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.947736",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e16",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.948328",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e17",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.949125",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e18",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:42.949819",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e19",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:29:50.559251",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='مفاهيم دينية']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='مفاهيم دينية']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:30:01.007828",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:30:07.025176",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='مفاهيم دينية']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='مفاهيم دينية']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:30:12.957173",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:30:29.047210",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:30:45.559621",
+    "status": "FAILED",
+    "page": "main_page",
+    "element": "//android.widget.TextView[@text='الخطب السابقة']",
+    "primary_locator": "('xpath', \"//android.widget.TextView[@text='الخطب السابقة']\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.388542",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e0",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.390263",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e1",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.390632",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e2",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.391111",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e3",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.391466",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e4",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.392079",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e5",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.392441",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e6",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.393486",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e7",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.394032",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e8",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.394810",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e9",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.395145",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e10",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.395607",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e11",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.396011",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e12",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.397161",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e13",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.397651",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e14",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.398179",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e15",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.399276",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e16",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.399694",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e17",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.400335",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e18",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:32:13.400705",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e19",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:34:07.675059",
+    "status": "FAILED",
+    "page": "language_page",
+    "element": "btn_arabic",
+    "primary_locator": "('id', 'com.islam.khutba.qa:id/btn_arabic')"
+  },
+  {
+    "timestamp": "2026-06-03T22:34:28.503411",
+    "status": "FAILED",
+    "page": "language_page",
+    "element": "//*[contains(@text, 'العربية')]",
+    "primary_locator": "('xpath', \"//*[contains(@text, 'العربية')]\")"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.614970",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e0",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.615607",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e1",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.617052",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e2",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.617674",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e3",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.618394",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e4",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.618974",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e5",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.619535",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e6",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.620284",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e7",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.621909",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e8",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.622470",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e9",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.623255",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e10",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.624466",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e11",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.625359",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e12",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.626116",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e13",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.626843",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e14",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.627586",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e15",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.628857",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e16",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.629617",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e17",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.630864",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e18",
+    "primary_locator": "('id', 'x')"
+  },
+  {
+    "timestamp": "2026-06-03T22:51:53.631706",
+    "status": "FAILED",
+    "page": "_test",
+    "element": "e19",
+    "primary_locator": "('id', 'x')"
+  }
+]

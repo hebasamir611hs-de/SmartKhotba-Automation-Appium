@@ -11,21 +11,17 @@ class ConceptsPage(BasePage):
 
     PAGE_NAME = "concepts_page"
 
-    # ─── Locators ────────────────────────────────────────────────
-    CONCEPTS_LIST = (By.ID, "com.islam.khutba.qa:id/rv_concepts")
-    CONCEPT_TITLE = (By.ID, "com.islam.khutba.qa:id/tv_concept_title")
-    CONCEPT_DESCRIPTION = (By.ID, "com.islam.khutba.qa:id/tv_concept_desc")
-    CONCEPT_IMAGE = (By.ID, "com.islam.khutba.qa:id/iv_concept")
-    CATEGORY_TABS = (By.ID, "com.islam.khutba.qa:id/tab_layout")
-    SHARE_BUTTON = (By.ID, "com.islam.khutba.qa:id/btn_share")
-    FAVORITE_BUTTON = (By.ID, "com.islam.khutba.qa:id/btn_favorite")
-    BACK_BUTTON = (By.ID, "com.islam.khutba.qa:id/btn_back")
-    LOADING = (By.ID, "com.islam.khutba.qa:id/progress_bar")
+    # ─── Locators (Compose — text/content-desc based) ─────────────
+    CONCEPTS_TITLE = (By.XPATH, "//*[@text='مفاهيم ومصطلحات دينية وردت في خطب الجمعة']")
+    CONCEPTS_SEARCH = (By.XPATH, "//*[@text='ادخل كلمة للبحث ..']")
+    CONCEPTS_LIST = (By.CLASS_NAME, "android.widget.ScrollView")
+    LOADING = (By.CLASS_NAME, "android.widget.ProgressBar")
 
     # ─── Actions ─────────────────────────────────────────────────
 
     def is_concepts_screen_displayed(self) -> bool:
-        return self.is_displayed(self.CONCEPTS_LIST, timeout=10)
+        return self.is_displayed(self.CONCEPTS_TITLE, timeout=10) or \
+               self.is_displayed(self.CONCEPTS_SEARCH, timeout=5)
 
     def select_concept_by_index(self, index: int = 0):
         items = (By.XPATH, f"(//androidx.recyclerview.widget.RecyclerView//android.widget.LinearLayout)[{index + 1}]")

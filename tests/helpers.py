@@ -12,13 +12,21 @@ from pages.main_page import MainPage
 
 def navigate_to_main(driver: WebDriver) -> MainPage:
     """Skip through all onboarding steps to reach main screen.
-    
+
     Used by tests that need MainPage as a precondition.
     Handles: Splash → Language → Location → Onboarding → OTP → Main
+    With noReset=true, the app often lands directly on the main screen.
     """
+    main = MainPage(driver)
+    if main.is_main_screen_displayed():
+        return main
+
     splash = SplashPage(driver)
     if splash.is_splash_displayed():
         splash.wait_for_splash_to_finish()
+
+    if main.is_main_screen_displayed():
+        return main
 
     lang = LanguagePage(driver)
     if lang.is_language_screen_displayed():
@@ -37,5 +45,4 @@ def navigate_to_main(driver: WebDriver) -> MainPage:
     if otp.is_otp_screen_displayed():
         otp.skip_otp()
 
-    main = MainPage(driver)
     return main
